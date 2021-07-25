@@ -34,7 +34,7 @@ public class Reader {
             line = reader.readLine();
         }
 
-        Collections.sort(lines);
+        lines.sort(String::compareToIgnoreCase);
         System.out.println("Слова в алфавитном порядке:");
         System.out.println(lines);
 
